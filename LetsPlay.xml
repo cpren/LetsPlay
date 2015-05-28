@@ -97,16 +97,35 @@
               </block>
             </statement>
             <next>
-              <block type="movement_forward" id="253">
-                <next>
-                  <block type="robot_delay" id="255" inline="true">
-                    <value name="DELAY">
-                      <block type="math_number" id="262">
-                        <field name="NUM">1000</field>
+              <block type="controls_if" id="320" inline="false">
+                <value name="IF0">
+                  <block type="logic_compare" id="321" inline="true">
+                    <field name="OP">GT</field>
+                    <value name="A">
+                      <block type="sensor_object" id="322">
+                        <field name="OBJECT">RIGHTFRONT</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="323">
+                        <field name="NUM">100</field>
                       </block>
                     </value>
                   </block>
-                </next>
+                </value>
+                <statement name="DO0">
+                  <block type="movement_forward" id="253">
+                    <next>
+                      <block type="robot_delay" id="255" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="262">
+                            <field name="NUM">1000</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
               </block>
             </next>
           </block>
