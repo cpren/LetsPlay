@@ -2,8 +2,8 @@
   <block type="controls_whileUntil" id="227" inline="false" x="26" y="96">
     <field name="MODE">WHILE</field>
     <value name="NUMBER">
-      <block type="math_shift" id="235" inline="true">
-        <field name="OP">LEFT</field>
+      <block type="logic_compare" id="296" inline="true">
+        <field name="OP">LT</field>
         <value name="A">
           <block type="math_number" id="243">
             <field name="NUM">0</field>
